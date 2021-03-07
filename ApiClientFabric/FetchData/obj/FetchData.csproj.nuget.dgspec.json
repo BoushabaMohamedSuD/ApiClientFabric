@@ -47,6 +47,10 @@
             "Microsoft.ServiceFabric.Services": {
               "target": "Package",
               "version": "[4.2.457, )"
+            },
+            "Microsoft.ServiceFabric.Services.Remoting": {
+              "target": "Package",
+              "version": "[4.2.457, )"
             }
           },
           "imports": [
