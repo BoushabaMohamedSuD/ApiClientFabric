@@ -12,11 +12,16 @@ namespace FetchData
     /// <summary>
     /// An instance of this class is created for each service instance by the Service Fabric runtime.
     /// </summary>
-    internal sealed class FetchData : StatelessService
+    internal sealed class FetchData : StatelessService,IData
     {
         public FetchData(StatelessServiceContext context)
             : base(context)
         { }
+
+        public Task<string> HelloWorldAsync()
+        {
+            return Task.FromResult("Hello!");
+        }
 
         /// <summary>
         /// Optional override to create listeners (e.g., TCP, HTTP) for this service replica to handle client or user requests.
@@ -24,7 +29,8 @@ namespace FetchData
         /// <returns>A collection of listeners.</returns>
         protected override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners()
         {
-            return new ServiceInstanceListener[0];
+            //return new ServiceInstanceListener[0];
+            return this.CreateServiceRemotingInstanceListeners();
         }
 
         /// <summary>
