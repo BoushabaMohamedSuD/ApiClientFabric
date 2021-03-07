@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.ServiceFabric.Services.Communication.Runtime;
+using Microsoft.ServiceFabric.Services.Remoting;
+using Microsoft.ServiceFabric.Services.Remoting.Runtime;
+using Microsoft.ServiceFabric.Services.Runtime;
+using System.Threading.Tasks;
 
 namespace FetchData
 {
-    interface IData
+    public interface IData:IService
     {
+        Task<string> HelloWorldAsync();
     }
 }
