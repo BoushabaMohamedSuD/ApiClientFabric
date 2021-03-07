@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Api/1.0.0": {
         "dependencies": {
+          "FetchData": "1.0.0",
           "Microsoft.ServiceFabric.AspNetCore.Kestrel": "4.2.457",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -2063,6 +2064,15 @@
           "lib/netstandard2.0/Microsoft.ServiceFabric.Diagnostics.dll": {}
         }
       },
+      "Microsoft.ServiceFabric.FabricTransport.Internal/4.2.457": {
+        "dependencies": {
+          "Microsoft.ServiceFabric": "7.2.457"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.dll": {},
+          "lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.dll": {}
+        }
+      },
       "Microsoft.ServiceFabric.Services/4.2.457": {
         "dependencies": {
           "Microsoft.ServiceFabric.Data": "4.2.457",
@@ -2070,6 +2080,16 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.ServiceFabric.Services.dll": {}
+        }
+      },
+      "Microsoft.ServiceFabric.Services.Remoting/4.2.457": {
+        "dependencies": {
+          "Microsoft.ServiceFabric.Diagnostics.Internal": "4.2.457",
+          "Microsoft.ServiceFabric.FabricTransport.Internal": "4.2.457",
+          "Microsoft.ServiceFabric.Services": "4.2.457"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.ServiceFabric.Services.Remoting.dll": {}
         }
       },
       "Microsoft.Win32.Primitives/4.0.1": {
@@ -2781,11 +2801,21 @@
           "System.Runtime": "4.1.0",
           "runtime.any.System.Threading.Timer": "4.0.1"
         }
+      },
+      "FetchData/1.0.0": {
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services": "4.2.457",
+          "Microsoft.ServiceFabric.Services.Remoting": "4.2.457"
+        },
+        "compile": {
+          "FetchData.dll": {}
+        }
       }
     },
     ".NETCoreApp,Version=v3.1/win7-x64": {
       "Api/1.0.0": {
         "dependencies": {
+          "FetchData": "1.0.0",
           "Microsoft.ServiceFabric.AspNetCore.Kestrel": "4.2.457",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -4824,6 +4854,21 @@
           }
         }
       },
+      "Microsoft.ServiceFabric.FabricTransport.Internal/4.2.457": {
+        "dependencies": {
+          "Microsoft.ServiceFabric": "7.2.457"
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.V2.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          },
+          "runtimes/win/lib/netstandard2.0/Microsoft.ServiceFabric.FabricTransport.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        }
+      },
       "Microsoft.ServiceFabric.Services/4.2.457": {
         "dependencies": {
           "Microsoft.ServiceFabric.Data": "4.2.457",
@@ -4831,6 +4876,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.ServiceFabric.Services.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "4.2.0.0"
+          }
+        }
+      },
+      "Microsoft.ServiceFabric.Services.Remoting/4.2.457": {
+        "dependencies": {
+          "Microsoft.ServiceFabric.Diagnostics.Internal": "4.2.457",
+          "Microsoft.ServiceFabric.FabricTransport.Internal": "4.2.457",
+          "Microsoft.ServiceFabric.Services": "4.2.457"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ServiceFabric.Services.Remoting.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "4.2.0.0"
           }
@@ -5545,6 +5603,15 @@
           "System.Runtime": "4.1.0",
           "runtime.any.System.Threading.Timer": "4.0.1"
         }
+      },
+      "FetchData/1.0.0": {
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services": "4.2.457",
+          "Microsoft.ServiceFabric.Services.Remoting": "4.2.457"
+        },
+        "runtime": {
+          "FetchData.dll": {}
+        }
       }
     }
   },
@@ -5802,12 +5869,26 @@
       "path": "microsoft.servicefabric.diagnostics.internal/4.2.457",
       "hashPath": "microsoft.servicefabric.diagnostics.internal.4.2.457.nupkg.sha512"
     },
+    "Microsoft.ServiceFabric.FabricTransport.Internal/4.2.457": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0Oxql47MwzDlcT2lfa5cq/wF0CkZ0IRVlIO++hBh6P2a1R3vWTVMS7rVNxn31aMiAela/IX7rHCW/DIgWo8ldg==",
+      "path": "microsoft.servicefabric.fabrictransport.internal/4.2.457",
+      "hashPath": "microsoft.servicefabric.fabrictransport.internal.4.2.457.nupkg.sha512"
+    },
     "Microsoft.ServiceFabric.Services/4.2.457": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-oo7f/2J//VdFHm8WnBMen4P4/Brr67IQ2xe6GPrzdflpeLfgd//vTlYKe7zeP5YpRbzHEWjwFmA3WSxvCMBoDA==",
       "path": "microsoft.servicefabric.services/4.2.457",
       "hashPath": "microsoft.servicefabric.services.4.2.457.nupkg.sha512"
+    },
+    "Microsoft.ServiceFabric.Services.Remoting/4.2.457": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wYFvtaeLAgo72zGEGDY2yPulfnjqpYr4qi4Dd5IDuuW1BQm2T9NfzSxnQG63X6Y2UPasUjSxlaecDaKJP+LsZQ==",
+      "path": "microsoft.servicefabric.services.remoting/4.2.457",
+      "hashPath": "microsoft.servicefabric.services.remoting.4.2.457.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.0.1": {
       "type": "package",
@@ -6424,6 +6505,11 @@
       "sha512": "sha512-saGfUV8uqVW6LeURiqxcGhZ24PzuRNaUBtbhVeuUAvky1naH395A/1nY0P2bWvrw/BreRtIB/EzTDkGBpqCwEw==",
       "path": "system.threading.timer/4.0.1",
       "hashPath": "system.threading.timer.4.0.1.nupkg.sha512"
+    },
+    "FetchData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

@@ -5,20 +5,28 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
-using Microsoft.ServiceFabric.Services.Remoting.Runtime;
 using Microsoft.ServiceFabric.Services.Runtime;
+
+using System.Fabric;
+using System.Fabric.Query;
 
 namespace FetchData
 {
     /// <summary>
     /// An instance of this class is created for each service instance by the Service Fabric runtime.
     /// </summary>
-    internal sealed class FetchData : StatelessService,IData
+    internal sealed class FetchData : Microsoft.ServiceFabric.Services.Runtime.StatelessService, IData
     {
         public FetchData(StatelessServiceContext context)
             : base(context)
         { }
 
+
+
+        public async Task<ApplicationList> getData(FabricClient fc)
+        {
+            return  await fc.QueryManager.GetApplicationListAsync();
+        }
         public Task<string> HelloWorldAsync()
         {
             return Task.FromResult("Hello!");
@@ -30,8 +38,7 @@ namespace FetchData
         /// <returns>A collection of listeners.</returns>
         protected override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners()
         {
-            //return new ServiceInstanceListener[0];
-            return this.CreateServiceRemotingInstanceListeners();
+            return new ServiceInstanceListener[0];
         }
 
         /// <summary>
@@ -54,5 +61,6 @@ namespace FetchData
                 await Task.Delay(TimeSpan.FromSeconds(1), cancellationToken);
             }
         }
+
     }
 }

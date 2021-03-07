@@ -386,3 +386,9 @@ C:\Users\med19\source\repos\ApiClientFabric\Api\obj\Debug\netcoreapp3.1\win7-x64
 C:\Users\med19\source\repos\ApiClientFabric\Api\obj\Debug\netcoreapp3.1\win7-x64\Api.dll
 C:\Users\med19\source\repos\ApiClientFabric\Api\obj\Debug\netcoreapp3.1\win7-x64\Api.pdb
 C:\Users\med19\source\repos\ApiClientFabric\Api\obj\Debug\netcoreapp3.1\win7-x64\Api.genruntimeconfig.cache
+C:\Users\med19\source\repos\ApiClientFabric\Api\bin\Debug\netcoreapp3.1\win7-x64\FetchData.exe
+C:\Users\med19\source\repos\ApiClientFabric\Api\bin\Debug\netcoreapp3.1\win7-x64\Microsoft.ServiceFabric.FabricTransport.V2.dll
+C:\Users\med19\source\repos\ApiClientFabric\Api\bin\Debug\netcoreapp3.1\win7-x64\Microsoft.ServiceFabric.FabricTransport.dll
+C:\Users\med19\source\repos\ApiClientFabric\Api\bin\Debug\netcoreapp3.1\win7-x64\Microsoft.ServiceFabric.Services.Remoting.dll
+C:\Users\med19\source\repos\ApiClientFabric\Api\bin\Debug\netcoreapp3.1\win7-x64\FetchData.dll
+C:\Users\med19\source\repos\ApiClientFabric\Api\bin\Debug\netcoreapp3.1\win7-x64\FetchData.pdb
