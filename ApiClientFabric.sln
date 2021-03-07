@@ -7,6 +7,8 @@ Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "ApiClientFabric", "ApiClien
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{19E1C9DF-C3F0-4AF9-97DD-09B237C3A30B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchData", "ApiClientFabric\FetchData\FetchData.csproj", "{A3CE8426-2DB8-4C42-A751-22D02CFA46A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,14 @@ Global
 		{19E1C9DF-C3F0-4AF9-97DD-09B237C3A30B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19E1C9DF-C3F0-4AF9-97DD-09B237C3A30B}.Release|x64.ActiveCfg = Release|Any CPU
 		{19E1C9DF-C3F0-4AF9-97DD-09B237C3A30B}.Release|x64.Build.0 = Release|Any CPU
+		{A3CE8426-2DB8-4C42-A751-22D02CFA46A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CE8426-2DB8-4C42-A751-22D02CFA46A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CE8426-2DB8-4C42-A751-22D02CFA46A5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A3CE8426-2DB8-4C42-A751-22D02CFA46A5}.Debug|x64.Build.0 = Debug|Any CPU
+		{A3CE8426-2DB8-4C42-A751-22D02CFA46A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CE8426-2DB8-4C42-A751-22D02CFA46A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CE8426-2DB8-4C42-A751-22D02CFA46A5}.Release|x64.ActiveCfg = Release|Any CPU
+		{A3CE8426-2DB8-4C42-A751-22D02CFA46A5}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
