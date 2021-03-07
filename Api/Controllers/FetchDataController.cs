@@ -39,5 +39,14 @@ namespace Api.Controllers
             return await data.getData(fc);
 
         }
+
+
+        [HttpGet("test")]
+        public  string Getestt()
+        {
+            Console.WriteLine("----***** get test hoho*****--------");
+            return "test";
+
+        }
     }
 }

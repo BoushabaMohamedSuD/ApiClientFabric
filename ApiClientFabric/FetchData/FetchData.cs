@@ -9,6 +9,7 @@ using Microsoft.ServiceFabric.Services.Runtime;
 
 using System.Fabric;
 using System.Fabric.Query;
+using Microsoft.ServiceFabric.Services.Remoting.Runtime;
 
 namespace FetchData
 {
@@ -38,7 +39,7 @@ namespace FetchData
         /// <returns>A collection of listeners.</returns>
         protected override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners()
         {
-            return new ServiceInstanceListener[0];
+            return this.CreateServiceRemotingInstanceListeners();
         }
 
         /// <summary>
