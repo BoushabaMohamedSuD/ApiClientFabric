@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rhtS4OK+HugplNf4kOae5AK5WBPRavF/sKUEDual5Vc8SU8Vu/Y3nT91ED1C3cRTl3bqTVdUeHmLQJjaGUINYg==",
+  "dgSpecHash": "RaSpdxMuaXdkCfWvUJdnA4A0HD5VptyVipaERYxgBjpbHZCnydTZmPW7GZu0Zb1RiZO3o65aHb94aZqkOanHDg==",
   "success": true,
   "projectFilePath": "C:\\Users\\med19\\source\\repos\\ApiClientFabric\\Api\\Api.csproj",
   "expectedPackageFiles": [
@@ -38,7 +38,9 @@
     "C:\\Users\\med19\\.nuget\\packages\\microsoft.servicefabric.data.extensions\\4.2.457\\microsoft.servicefabric.data.extensions.4.2.457.nupkg.sha512",
     "C:\\Users\\med19\\.nuget\\packages\\microsoft.servicefabric.data.interfaces\\4.2.457\\microsoft.servicefabric.data.interfaces.4.2.457.nupkg.sha512",
     "C:\\Users\\med19\\.nuget\\packages\\microsoft.servicefabric.diagnostics.internal\\4.2.457\\microsoft.servicefabric.diagnostics.internal.4.2.457.nupkg.sha512",
+    "C:\\Users\\med19\\.nuget\\packages\\microsoft.servicefabric.fabrictransport.internal\\4.2.457\\microsoft.servicefabric.fabrictransport.internal.4.2.457.nupkg.sha512",
     "C:\\Users\\med19\\.nuget\\packages\\microsoft.servicefabric.services\\4.2.457\\microsoft.servicefabric.services.4.2.457.nupkg.sha512",
+    "C:\\Users\\med19\\.nuget\\packages\\microsoft.servicefabric.services.remoting\\4.2.457\\microsoft.servicefabric.services.remoting.4.2.457.nupkg.sha512",
     "C:\\Users\\med19\\.nuget\\packages\\microsoft.win32.primitives\\4.0.1\\microsoft.win32.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\med19\\.nuget\\packages\\runtime.any.system.collections\\4.0.11\\runtime.any.system.collections.4.0.11.nupkg.sha512",
     "C:\\Users\\med19\\.nuget\\packages\\runtime.any.system.diagnostics.tracing\\4.1.0\\runtime.any.system.diagnostics.tracing.4.1.0.nupkg.sha512",

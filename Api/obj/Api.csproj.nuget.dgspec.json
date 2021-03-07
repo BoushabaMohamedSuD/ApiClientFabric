@@ -4,6 +4,93 @@
     "C:\\Users\\med19\\source\\repos\\ApiClientFabric\\Api\\Api.csproj": {}
   },
   "projects": {
+    "C:\\Users\\med19\\source\\repos\\ApiClientFabric\\ApiClientFabric\\FetchData\\FetchData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\med19\\source\\repos\\ApiClientFabric\\ApiClientFabric\\FetchData\\FetchData.csproj",
+        "projectName": "FetchData",
+        "projectPath": "C:\\Users\\med19\\source\\repos\\ApiClientFabric\\ApiClientFabric\\FetchData\\FetchData.csproj",
+        "packagesPath": "C:\\Users\\med19\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\med19\\source\\repos\\ApiClientFabric\\ApiClientFabric\\FetchData\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\med19\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.ServiceFabric.Services": {
+              "target": "Package",
+              "version": "[4.2.457, )"
+            },
+            "Microsoft.ServiceFabric.Services.Remoting": {
+              "target": "Package",
+              "version": "[4.2.457, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x64": {
+          "#import": []
+        }
+      }
+    },
     "C:\\Users\\med19\\source\\repos\\ApiClientFabric\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +118,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\med19\\source\\repos\\ApiClientFabric\\ApiClientFabric\\FetchData\\FetchData.csproj": {
+                "projectPath": "C:\\Users\\med19\\source\\repos\\ApiClientFabric\\ApiClientFabric\\FetchData\\FetchData.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

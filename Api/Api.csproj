@@ -12,5 +12,9 @@
     <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" Version="4.2.457" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ApiClientFabric\FetchData\FetchData.csproj" />
+  </ItemGroup>
+
 
 </Project>

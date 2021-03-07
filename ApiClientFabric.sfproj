@@ -32,6 +32,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="ApiClientFabric\FetchData\FetchData.csproj" />
     <ProjectReference Include="Api\Api.csproj">
       <ServiceLaunchUrl>http://{MachineName}:{ServicePort}/weatherforecast</ServiceLaunchUrl>
     </ProjectReference>
